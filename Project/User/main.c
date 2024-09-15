@@ -7,6 +7,8 @@
 #include "./BSP/ADC/adc3.h"
 #include "./BSP/LSENS/lsens.h"
 #include "./BSP/DHT11/dht11.h"
+#include "./BSP/MOTOR/motor.h"
+
 
 
 int main(void)
@@ -24,6 +26,7 @@ int main(void)
 	lcd_init();										/* 初始化LCD */
 	adc_temperature_init();						/* 初始化ADC内部温度传感器采集 */
 	lsens_init();									/* 初始化光敏传感器 */
+	MX_TIM1_Init();								/* 初始化定时器输出PWM */
 	
 	lcd_show_string(30, 70, 288, 32, 32, "PetCareSTM32 TEST", RED);
 	lcd_show_string(30, 120, 200, 24, 24, "TEMPERATE: 00.00C", BLUE);
@@ -35,6 +38,7 @@ int main(void)
 		delay_ms(1000);
 	}
 	
+	motor_Control(500);
 
 	while (1)
 	{

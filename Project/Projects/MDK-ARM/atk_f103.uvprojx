@@ -543,6 +543,11 @@
               <FileType>1</FileType>
               <FilePath>..\..\Drivers\BSP\DHT11\dht11.c</FilePath>
             </File>
+            <File>
+              <FileName>motor.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\Drivers\BSP\MOTOR\motor.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>

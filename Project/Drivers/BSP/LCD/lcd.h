@@ -13,7 +13,7 @@
 #define __LCD_H
 
 #include "stdlib.h"
-#include "./SYSTEM/sys/sys.h"
+#include <stdint.h>
 
 
 /******************************************************************************************/

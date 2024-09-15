@@ -10,8 +10,8 @@
 
 
 #include "stdlib.h"
-#include "./BSP/LCD/lcd.h"
-#include "./BSP/LCD/lcdfont.h"
+#include "lcd.h"
+#include "lcdfont.h"
 #include "./SYSTEM/usart/usart.h"
 
 
@@ -19,7 +19,7 @@
  * 不直接加入到工程里面,只有lcd.c会用到,所以通过include的形式添加.(不要在
  * 其他文件再包含该.c文件!!否则会报错!)
  */
-#include "./BSP/LCD/lcd_ex.c"
+#include "lcd_ex.c"
 
 
 SRAM_HandleTypeDef g_sram_handle;    /* SRAM句柄(用于控制LCD) */

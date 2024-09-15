@@ -5,26 +5,12 @@
 #include "./SYSTEM/sys/sys.h"
 
 
-/*****************辰哥单片机设计******************
-											STM32
- * 文件			:	DHT11温度湿度传感器h文件                   
- * 版本			: V1.0
- * 日期			: 2024.8.4
- * MCU			:	STM32F103C8T6
- * 接口			:	见代码							
- * BILIBILI	:	辰哥单片机设计
- * CSDN			:	辰哥单片机设计
- * 作者			:	辰哥
 
-**********************BEGIN***********************/
-
-
-/***************根据自己需求更改****************/
 //DHT11引脚宏定义
 #define DHT11_GPIO_PORT  GPIOC
 #define DHT11_GPIO_PIN   GPIO_PIN_2
 #define DHT11_GPIO_CLK   __HAL_RCC_GPIOC_CLK_ENABLE();
-/*********************END**********************/
+
 
 //输出状态定义
 #define OUT 1

@@ -10,7 +10,7 @@
  */
  
 #include "./SYSTEM/delay/delay.h"
-#include "./BSP/LCD/lcd.h"
+#include "lcd.h"
 
 
 /**
